@@ -8,8 +8,8 @@ import lombok.Getter;
 public class ProdutoDTO {
 
     private int id;
-    private String nome;
+    private String produto;
     private int quantidade;
     private float valor_unitario;
-    private float preco_total;
+
 }

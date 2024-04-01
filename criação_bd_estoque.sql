@@ -7,3 +7,5 @@ create table produtos(
     preco_unitario decimal(5,2),
     preco_total decimal(5,2)
 );
+
+alter table produtos change nome_produto produto varchar(255);

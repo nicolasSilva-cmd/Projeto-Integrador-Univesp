@@ -51,6 +51,18 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-jaxrs -->
+		<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-jaxrs</artifactId>
+			<version>4.0.0.Beta5</version>
+		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>jakarta.ws.rs</groupId>-->
+<!--			<artifactId>jakarta.ws.rs-api</artifactId>-->
+<!--		</dependency>-->
+
+
 	</dependencies>
 
 	<build>
