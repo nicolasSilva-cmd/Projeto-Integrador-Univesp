@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercados e Produtos</title>
+    <link href="../css/index.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <br>
+
+    <h1 class="display-4 text-center">Mercados e Produtos</h1>
+    
+    <br>
+<div>
+    <div class="container">
+        <div>
+            <label for="market-details" class="form-label">Selecione o ID do Mercado:</label>
+        </div>
+        <div>
+            <select class="form-control" list="datalistOptions" id="market-details">
+                <option  value= "" selected></option>
+            </select>
+        </div>
+        <div>
+            <button class="btn btn-primary 4 drpdown" id="search-button">Buscar</button>
+        </div>
+    </div>
+        
+        <br>
+    <div class="container">
+        <div>
+            <label class="form-label" for="market-address">Digite o Endereço do Mercado:</label>
+        </div>
+        <div>
+            <input type="text" id="market-address" class="form-control" placeholder="Digite o endereço do mercado">
+        </div>
+        <div>
+            <button id="search-market-button" class="btn btn-primary 3">Buscar por Endereço</button>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container">
+        <div>
+            <label class="form-label" for="market-name">Digite o Nome do Mercado:</label>
+        </div>
+        <div>
+            <input type="text" id="market-name" class="form-control" placeholder="Digite o nome do mercado">
+        </div>
+        <div>
+            <button id="search-name-button" class="btn btn-primary 3">Buscar por Nome</button>
+        </div>
+    </div>
+      
+        <br>
+    <div class="table-responsive">
+        <table class="table container " id="mercado-table" border="1">
+            <thead>
+                <tr class="table-light">
+                    <th>ID</th>
+                    <th>Nome do Mercado</th>
+                    <th>Endereço</th>
+                    <th id="products-column">Produtos</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Conteúdo será preenchido via JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    
+    
+    <br>
+
+    <form class="center btn-group d-grid gap-2 col-2 mx-auto" role="group">
+        <button type="button" class="btn btn-primary" onclick="window.location.href = 'gestao-mercado.html';" formnovalidate>Adicionar mercado</button>
+        <button type="button" class="btn btn-primary" onclick="window.location.href = 'interface-produto.html';" formnovalidate>Lista de produtos</button>
+    </form>
+</div>
+
+    <script src="../JavaScript/interface-mercado.js"></script>
+
+
+</body>
+</html>

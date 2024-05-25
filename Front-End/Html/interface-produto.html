@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Produtos</title>
+    <link href="../css/index.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <br>
+
+    <h1 class="display-4 text-center">Lista de Produtos</h1>        
+
+    <br>
+    <div>
+        <div class="container">
+            <div>
+                <label for="product-id" class="form-label">Selecione o ID do Produto:</label>
+            </div>
+            <div>
+                <select id="product-id" class="form-control" list="datalistOptions">
+                    <option value="" selected></option>
+                </select>
+            </div>
+            <div>
+            <button class="btn btn-primary 4 dropdown" id="search-product-id-button">Buscar Produto por ID</button>
+            </div>
+        </div>
+        
+        <br>
+
+        <div class="container">
+            <div>
+                <label for="product-name" class="form-label">Digite o Nome do Produto: </label>
+            </div>
+            <div>
+                <input class="form-control" type="text" id="product-name" placeholder="Digite o nome do produto">
+            </div>
+            <div class="col-auto">
+                <button class="btn btn-primary 3" id="search-product-button">Buscar Produto</button>
+            </div>
+        </div>
+
+      
+        </div>
+
+        <div class="container">
+            <br>
+            <input type="checkbox" id="discount-only-checkbox">
+            <label for="discount-only-checkbox">Mostrar apenas produtos com desconto</label>
+        </div>
+        
+        <br>
+
+        <table class="table container" id="produto-table" border="1">
+            <thead>
+                <tr class="table-light">
+                    <th>ID</th>
+                    <th>Nome do Produto</th>
+                    <th>Imagem</th>
+                    <th>Preço</th>
+                    <th>Desconto</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        
+        <br>
+        <form class="center btn-group d-grid gap-2 col-2 mx-auto" role="group"> 
+            <button type="button" class="btn btn-primary" onclick="window.location.href = 'interface-mercado.html';" formnovalidate>Voltar para Mercados</button>
+            <button type="button" class="btn btn-primary" onclick="window.location.href = 'gestao-produto.html';" formnovalidate>Adicionar produto</button>
+        </form>
+
+        <script src="../JavaScript/interface-produto.js"></script>
+    </div>
+</body>
+</html>
