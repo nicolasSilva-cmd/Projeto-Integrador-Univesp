@@ -1,0 +1,3 @@
+[submodule "Front-End"]
+	path = Front-End
+	url = https://github.com/nicolasSilva-cmd/FE-Projeto-Integrador-Univesp
