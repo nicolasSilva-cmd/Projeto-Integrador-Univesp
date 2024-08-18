@@ -11,12 +11,7 @@ import java.util.Optional;
 
 public interface MercadoRepository extends JpaRepository<MercadoEntity, Long> {
 
-    Optional<MercadoEntity> findByNome(String nome);
-
     List<MercadoEntity> findByEndereco(String endereco);
-
-//    @Query("SELECT e.endereco FROM MercadoEntity e WHERE e.endereco LIKE CONCAT('%',:username,'%')")
-//    List<MercadoEntity> findMercadoWhereEnderecoLike(@Param("endereco") String endereco);
 
     List<MercadoEntity> findByEnderecoContaining(String endereco);
 
