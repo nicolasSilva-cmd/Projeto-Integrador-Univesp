@@ -1,4 +1,4 @@
-Repositório do projeto integrador Univesp.
+Back-end do projeto integrador Univesp.
 
 É um projeto voltado para o desenvolvimento de um software que tem como foco a criação de um estoque.
 
